@@ -1,0 +1,231 @@
+body {
+    font-family: Akrobat;
+    margin: 0;
+    padding: 0;
+    color: black;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+}
+
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+.navLogo {
+    font-family: Cruinn;
+    color: #00171F;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.navMenu {
+    width: 400px;
+}
+.navList {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 0px;
+    list-style: none;
+    font-size: 18px;
+}
+.navLink{
+    text-decoration: none;
+    color: #00171F;
+}
+:is(.navLogo, .navLink, .navList):hover {
+    color: #003459;
+}
+
+/* .textEntry {
+    max-height: 5px;
+    font-size: 18px;
+} */
+.btnEntry {
+    font-family: Akrobat;
+    font-size: 16px;
+    display: block;
+    border-style: solid;
+    padding: 0px 30px 0px 30px;
+    border-radius: 30px;
+    border-width: 2px;
+    color: white;
+    border-color: #003459;
+    background-color: #003459;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.heroImage {
+    width: 100%;
+}
+
+.container {
+    position: relative;
+    display: flex;
+}
+.container img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+
+}
+.overlayText {
+    position: absolute;
+    left: 100px;
+    color: #00171F;
+    font-size: 26px;
+    font-family: Akrobat, RobotoCondensed;
+    margin-bottom: 0;
+}
+
+.heroStats {
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.btn1 {
+    font-family: Akrobat;
+    font-size: 24px;
+    display: block;
+    padding: 10px 30px 10px 30px;
+    border-style: solid;
+    border-radius: 30px;
+    border-width: 2px;
+    color: white;
+    border-color: #003459;
+    background-color: #003459;
+    transition: background-color 0.2s ease, color 0.2s ease;
+
+}
+.btn2 {
+    font-family: Akrobat;
+    font-size: 24px;
+    background-color: transparent;
+    color: #003459;
+    margin-left: 10px;
+    display: block;
+    padding: 10px 30px 10px 30px;
+    border-style: solid;
+    border-radius: 30px;
+    border-width: 2px;
+    border-color: #003459;
+    transition: background-color 0.2s ease, color 0.2s ease;
+
+}
+.btns {
+    display: flex;
+
+}
+button:hover {
+    background-color: #F4FCFE;
+    color: #003459;
+}
+
+.heroStat {
+    text-align: center;
+}
+
+.heroStatNumber {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 2px;
+    color: #003459;
+
+}
+
+.heroStatDescription {
+    font-size: 1rem;
+    color: #737373;
+    font-weight: bold;
+}
+
+.blockOffer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 60px 0px 60px;
+    margin-bottom: 50px;
+}
+
+.textOffer {
+    font-size: 18px;
+    max-width: 400px;
+}
+.btn3 {
+    font-family: Akrobat;
+    font-size: 18px;
+    max-height: 60px;
+    display: block;
+    padding: 10px 30px 10px 30px;
+    border-style: solid;
+    border-radius: 30px;
+    border-width: 2px;
+    color: white;
+    border-color: #003459;
+    background-color: #003459;
+    transition: background-color 0.2s ease, color 0.2s ease;
+
+}
+.textReason {
+    display: flex;
+    justify-content: center;
+    color: #003459;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.blockElement {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin: 20px 60px 20px 60px;
+}
+.textElement {
+    max-width: 250px;
+    background-color: #cccccc;
+    border-radius: 30px;
+
+}
+
+.textCount {
+    font-size: 18px;
+    margin: 30px;
+    text-align: center;
+}
+
+.blockTherapy {
+    padding-bottom: 30px;
+}
+.blockTest {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* @media (max-width: 768px) {
+    .heroImageContainer{
+      margin-bottom: 30px;
+    }
+    .overlayText {
+        font-size: 18px;
+    }
+    .heroStat {
+        gap: 20px;
+        max-width: 600px;
+    }
+
+    .heroStatNumber{
+        font-size: 1.7rem;
+    }
+
+} */
