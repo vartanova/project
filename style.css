@@ -1,30 +1,43 @@
 body {
     font-family: Akrobat;
+    font-size: 18px;
     margin: 0;
     padding: 0;
     color: black;
     line-height: 1.6;
     background-color: #f7f7f7;
 }
+.btn {
+    font-family: Akrobat;
+    font-size: 18px;
+    border-style: solid;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border-width: 2px;
+    color: white;
+    border-color: #003459;
+    background-color: #003459;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
 
-.navContainer {
+.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-right: 60px;
     padding-left: 60px;
 }
-.navLogo {
+.nav-container__nav-title {
     font-family: Cruinn;
     color: #00171F;
     text-decoration: none;
     font-size: 30px;
 }
 
-.navMenu {
+.nav-container__nav-menu {
     width: 400px;
 }
-.navList {
+.nav-container__nav-list {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,48 +45,31 @@ body {
     list-style: none;
     font-size: 18px;
 }
-.navLink{
+.nav-list__link{
     text-decoration: none;
     color: #00171F;
 }
-:is(.navLogo, .navLink, .navList):hover {
+:is(.nav-container__nav-title, .nav-list__link, .nav-container__nav-list):hover {
     color: #003459;
 }
 
-/* .textEntry {
-    max-height: 5px;
-    font-size: 18px;
-} */
-.btnEntry {
-    font-family: Akrobat;
+.action__btn-entry {
     font-size: 16px;
-    display: block;
-    border-style: solid;
-    padding: 0px 30px 0px 30px;
-    border-radius: 30px;
-    border-width: 2px;
-    color: white;
-    border-color: #003459;
-    background-color: #003459;
-    transition: background-color 0.2s ease, color 0.2s ease;
+    padding: 0px 30px;
 }
 
-.heroImage {
+.container__image {
     width: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+
 }
 
 .container {
     position: relative;
     display: flex;
 }
-.container img {
-    display: block;
-    width: 100%;
-    object-fit: cover;
-    opacity: 0.9;
-
-}
-.overlayText {
+.container__overlay-elem {
     position: absolute;
     left: 100px;
     color: #00171F;
@@ -81,8 +77,11 @@ body {
     font-family: Akrobat, RobotoCondensed;
     margin-bottom: 0;
 }
-
-.heroStats {
+.container__overlay-text {
+    max-width: 360px;
+    font-size: 20px;
+}
+.hero-stats {
     display: flex;
     justify-content:space-around;
     flex-wrap: wrap;
@@ -90,50 +89,32 @@ body {
     width: 100%;
     padding-bottom: 50px;
 }
-
-.btn1 {
-    font-family: Akrobat;
-    font-size: 24px;
-    display: block;
-    padding: 10px 30px 10px 30px;
-    border-style: solid;
-    border-radius: 30px;
-    border-width: 2px;
-    color: white;
-    border-color: #003459;
-    background-color: #003459;
-    transition: background-color 0.2s ease, color 0.2s ease;
-
-}
-.btn2 {
-    font-family: Akrobat;
-    font-size: 24px;
-    background-color: transparent;
-    color: #003459;
-    margin-left: 10px;
-    display: block;
-    padding: 10px 30px 10px 30px;
-    border-style: solid;
-    border-radius: 30px;
-    border-width: 2px;
-    border-color: #003459;
-    transition: background-color 0.2s ease, color 0.2s ease;
-
-}
-.btns {
+.container__overlay-btn {
     display: flex;
-
 }
+
+.container__overlay-elem_go-test{
+    font-size: 24px;
+}
+.container__overlay-elem_choose-psycholog {
+    font-size: 24px;
+    margin-left: 10px;
+    background-color: transparent;
+    border-color: #003459;
+    color: #003459;
+    font-weight: 500;
+}
+
 button:hover {
     background-color: #F4FCFE;
     color: #003459;
 }
 
-.heroStat {
+.hero-stats__item {
     text-align: center;
 }
 
-.heroStatNumber {
+.hero-stats__stat-num {
     font-size: 4rem;
     font-weight: bold;
     margin-bottom: 2px;
@@ -141,40 +122,36 @@ button:hover {
 
 }
 
-.heroStatDescription {
+.hero-stats__description {
     font-size: 1rem;
     color: #737373;
     font-weight: bold;
 }
 
-.blockOffer {
+.block-offer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 60px 0px 60px;
+    padding: 0px 60px;
     margin-bottom: 50px;
 }
 
-.textOffer {
-    font-size: 18px;
+.block-offer__text {
     max-width: 400px;
+    font-weight: 600;
 }
-.btn3 {
-    font-family: Akrobat;
-    font-size: 18px;
+.block-test__btn-go-test {
     max-height: 60px;
-    display: block;
-    padding: 10px 30px 10px 30px;
-    border-style: solid;
-    border-radius: 30px;
-    border-width: 2px;
-    color: white;
-    border-color: #003459;
-    background-color: #003459;
-    transition: background-color 0.2s ease, color 0.2s ease;
+    padding-top: 0;
+    padding-bottom: 0;
+    align-items: center;
+}
+.block-test__text-offer {
+    padding-right: 30px;
+    font-weight: 600;
 
 }
-.textReason {
+.block-therapy__title {
     display: flex;
     justify-content: center;
     color: #003459;
@@ -182,30 +159,30 @@ button:hover {
     font-weight: 700;
 }
 
-.blockElement {
+.block-therapy__elem {
     display: flex;
     justify-content: space-between;
     align-items: center;
     
-    margin: 20px 60px 20px 60px;
+    margin: 20px 60px;
 }
-.textElement {
+.block-therapy__item {
     max-width: 250px;
     background-color: #cccccc;
     border-radius: 30px;
 
 }
 
-.textCount {
+.block-therapy__text {
     font-size: 18px;
     margin: 30px;
     text-align: center;
 }
 
-.blockTherapy {
+.block-therapy {
     padding-bottom: 30px;
 }
-.blockTest {
+.block-test {
     display: flex;
     justify-content: center;
 }
