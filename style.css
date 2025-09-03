@@ -1,5 +1,5 @@
 body {
-    font-family: Akrobat;
+    font-family: "Open Sans", sans-serif;
     font-size: 18px;
     margin: 0;
     padding: 0;
@@ -8,7 +8,7 @@ body {
     background-color: #f7f7f7;
 }
 .btn {
-    font-family: Akrobat;
+    font-family: "Open Sans", sans-serif;
     font-size: 18px;
     border-style: solid;
     padding: 10px 30px;
@@ -28,7 +28,7 @@ body {
     padding-left: 60px;
 }
 .nav-container__nav-title {
-    font-family: Cruinn;
+    font-family: "Sansation", sans-serif;
     color: #00171F;
     text-decoration: none;
     font-size: 30px;
@@ -74,7 +74,6 @@ body {
     left: 100px;
     color: #00171F;
     font-size: 26px;
-    font-family: Akrobat, RobotoCondensed;
     margin-bottom: 0;
 }
 .container__overlay-text {
@@ -187,22 +186,3 @@ button:hover {
     justify-content: center;
 }
 
-
-
-/* @media (max-width: 768px) {
-    .heroImageContainer{
-      margin-bottom: 30px;
-    }
-    .overlayText {
-        font-size: 18px;
-    }
-    .heroStat {
-        gap: 20px;
-        max-width: 600px;
-    }
-
-    .heroStatNumber{
-        font-size: 1.7rem;
-    }
-
-} */
